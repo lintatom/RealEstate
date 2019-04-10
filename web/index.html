@@ -10,6 +10,12 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" media="all" href="realest.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    
     </head>
     <body>
 
@@ -25,12 +31,33 @@ and open the template in the editor.
                 </div>
             </header>
 
-
-            <img class="first" src="img/s2.jpg" alt="img" style="width:100%">
-            <img src="img/sss2.jpg" style="width: 100%">
-            <button class="btn">Search</button>
+            
         </div>
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+<!-- The slide show -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/s2.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img/sss2.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+  </div>
     </body>
 </html>
