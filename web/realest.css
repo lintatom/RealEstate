@@ -155,3 +155,43 @@ body{
 .container .btn:hover {
     background-color: black;
 }
+#slider{
+    overflow:hidden;
+}
+#slider figure{
+    position:relative;
+    width:300%;
+    margin:0;
+    left:0;
+    animation:15s slider infinite;
+}
+#slider figure img{
+    float:left;
+    width:33.3%;
+}
+@keyframes slider{
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    35%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left:-100%;
+    }
+    70%{
+        left:-200%;
+    }
+    95%{
+        left:-200%;
+    }
+    100%{
+        left:-200%;
+    }
+}
