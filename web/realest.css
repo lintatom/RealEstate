@@ -155,7 +155,7 @@
 hr {
     display: block;
     border: 1px solid black;
-    /* Agent Information   */
+/* Agent Information   */
     .agent-indro{
         overflow: hidden; 
         display: inline-block;
