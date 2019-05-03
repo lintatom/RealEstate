@@ -13,7 +13,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
+        <script type="text/javascript" src="realestate.js"></script>
         <link rel="stylesheet" type="text/css" media="all" href="realest.css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">        
@@ -49,10 +49,10 @@ and open the template in the editor.
                 <li> <a href="#service">Services</a>
                     <ul>
                         <li>
-                            <a href="#buy">Buy</a>
+                            <a href="buyers.html">Buyers</a>
                         </li>
                         <li>
-                            <a href="#sell">Sell</a>
+                            <a href="#sell">Sellers</a>
                         </li>
                         <li>
                             <a href="#" style="border-bottom: 1px #fff;">Community Reports</a>
@@ -134,48 +134,74 @@ and open the template in the editor.
             </form>
         </div>
 
-        <script>
-            // Get the modal
-            var modal = document.getElementById('container_mainsignin');
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-
-            /*----hide the element in signIn Page-----*/
-            $(document).ready(function () {
-                $(".signin_link").click(function () {
-                    $(".needstoregister-links").hide();
-                });
-                $(".alreadyregistered_link").click(function () {
-                    $(".txtname_signin").hide();
-                    $(".txtphone_signin").hide();
-                    $(".alreadyregistered_link").hide();
-                    $(".needstoregister-links").show();
-                    // $(".btnregister_signin").text('Login');
-                    $(".btnregister_signin").text("Login");
-
-                });
-                $(".needstoregister-links").click(function () {
-                    $(".txtname_signin").show();
-                    $(".txtphone_signin").show();
-                    $(".alreadyregistered_link").show();
-                    $(".needstoregister-links").hide();
-                    $(".btnregister_signin").text("Register");
-                });
-
-            });
-        </script>
-
-
+       
 
         <div id="services">
 
         </div>
-
+<!--Have Question-->
+<div><a href="#"><button class="btn btn-default" type="button">Have Questions?</button></a></div>
+<br>
+<div class="container search" style="border: 1px solid #000;">
+    <div class="row">
+        <div class="col-md-12" >
+            
+                <input type="button" class="click" id="click" value="FIND MY LOCATION">
+               <input type="text" class="control-label" value="Type to search by city" />
+               <input type="button" class="click" id="click" value="Search">
+          
+        </div>
+            
+        </div >
+        <div class="container bottom_search">
+        <div class="row">
+            <div class="col-md-3" >
+                <div class="dropdown form-control">
+                    
+                    <div data-toggle="dropdown" class="filter_menu_trigger">Bedrooms 0+
+                        <span class="caret caret_sidebar "></span>
+                    </div>
+                  <!--  <input type="hidden" name="bedrooms" value="0">-->
+                        <ul class="dropdown-menu filter_menu v2-dropdown" role="menu" aria-labelledby="sidebar-adv_categ">
+                            <li role="presentation" data-value="0">Bedrooms 0+</li>
+                            <li role="presentation" data-value="1">Bedrooms 1+</li>
+                            <li role="presentation" data-value="2">Bedrooms 2+</li>
+                            <li role="presentation" data-value="3">Bedrooms 3+</li>
+                            <li role="presentation" data-value="4">Bedrooms 4+</li>
+                            <li role="presentation" data-value="5">Bedrooms 5+</li> 
+                        </ul>        
+                 </div>
+                
+            </div> 
+            <div class="col-md-3" >
+                <div class="dropdown form-control">
+                    
+                    <div data-toggle="dropdown" class="filter_menu_trigger">Bathrooms 0+
+                        <span class="caret caret_sidebar "></span>
+                    </div>
+                         <input type="hidden" name="Bathrooms" value="0">
+                        <ul class="dropdown-menu filter_menu v2-dropdown" role="menu" aria-labelledby="sidebar-adv_categ">
+                            <li role="presentation" data-value="0">Bathrooms 0+</li>
+                            <li role="presentation" data-value="1">Bathrooms 1+</li>
+                            <li role="presentation" data-value="2">Bathrooms 2+</li>
+                            <li role="presentation" data-value="3">Bathrooms 3+</li>
+                            <li role="presentation" data-value="4">Bathrooms 4+</li>
+                            <li role="presentation" data-value="5">Bathrooms 5+</li> 
+                        </ul>        
+                 </div>
+                
+            </div> 
+            <div class="col-md-6" >
+                <div>Price:<span id="spanOutput"></span>
+                    <br/><br/>
+                    <div id="slider" style="width: 300px;"></div>
+                   </div>
+               
+            </div>
+        </div>
+        <br>
+</div>
+</div>
         
         <!-----Footer-->
         <div class="footer">
