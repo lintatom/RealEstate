@@ -11,6 +11,7 @@ function loadPage(page){
                             .then(html => fillContent(html, 'agent-detail'));
                     });
           break;
+          
       default:
           fetch('./home.html')
             .then(res => res.text())
