@@ -9,7 +9,8 @@ and open the template in the editor.
         <title>Real Estate</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
              <link rel="stylesheet" type="text/css" media="all" href="realest.css">
@@ -25,8 +26,7 @@ and open the template in the editor.
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    
-    </head>
+    </head> 
     <body>
 
         
@@ -41,49 +41,48 @@ and open the template in the editor.
            <!-- <div class="wrapper">     -->          
                 <div class="imgcentury"><img src="img/century.png" width="200" height="100"> </div>                  
                   <div class="navbar">
-                    <ul>
-                        <li> <a href="index.html">Home</a></li>  
-                         <li> <a href="service">Services</a>
-                             <ul>
-                                <li>
-                                    <a href="buyers.html" onclick="loadpage('buyers')">Buyers</a>                                    
-                                </li>
-                                <li>
-                                    <a href="#sell">Sellers</a>
-                                </li>
-                                <li>
-                                    <a href="#" style="border-bottom: 1px #fff;">Community Reports</a>
-                                </li>
-                            </ul></li>
-                        <li> <a href="#client">Client</a>
-                         <ul>
-                                <li>
-                                    <a href="#users">Users</a>
-                                </li>
-                                <li>
-                                    <a href="#login" style="border-bottom: 1px #fff;">LogIn</a>
-                                </li>
-                            </ul>
-                        </li>                   
-                        <li><a href="#property">Property List</a>
-                        <ul>
-                                <li>
-                                    <a href="#">Featured Properties</a>
-                                </li>
-                                <li>
-                                    <a href="#" style="border-bottom: 1px #fff;">Sold Properties</a>
-                                    
-                                </li>
-                            </ul>
-                        </li>
-                        <li> <a href="#Aboutus">About Us</a>
-                            <ul>
-                                        <li>
-                                            <a href="#" onclick="loadpage('contact')" style="border-bottom: 1px #fff;">Contact Us</a>
-                                        </li>
-                                    </ul>
-                           </li>
-                    </ul>
+                   <ul>
+               <li> <a href="index.html">Home</a>    </li>
+               <li> <a href="#service">Services</a>
+                   <ul>
+                       
+
+                          
+                       <li><a href="#" onclick="loadPage('buyers')">Buyers</a></li>
+                    
+                       <li><a href="#" onclick="loadPage('sellers')">Sellers</a></li>
+                       <li>
+                           <a href="#" style="border-bottom: 1px #fff;">Community Reports</a>
+                       </li>
+                   </ul></li>
+               <li> <a href="#client">Client</a>
+                   <ul>
+                       <li>
+                           <a href="#users">Users</a>
+                       </li>
+                       <li>
+                           <a href="#login" style="border-bottom: 1px #fff;">LogIn</a>
+                       </li>
+                   </ul>
+               </li>
+               <li><a href="#property">Property List</a>
+                   <ul>
+                       <li>
+                           <a href="#">Featured Properties</a>
+                       </li>
+                       <li>
+                           <a href="#" style="border-bottom: 1px #fff;">Sold Properties</a>
+                       </li>
+                   </ul>
+               </li>
+               <li> <a href="#Aboutus">About Us</a>
+                   <ul>
+                       <li><a href="#" onclick="loadPage('about')">About</a></li>
+                       <li><a href="#" onclick="loadPage('contact')" style="border-bottom: 1px #fff;">Contact Us</a></li>
+                        
+                   </ul>
+               </li>
+           </ul>
                       <a href="#signin" class="signin_link" onclick="document.getElementById('container_mainsignin').style.display='block'" style="text-align: right;margin-right: 60px">Sign In</a>
                   </div>      
           <!--  </div>-->
@@ -133,72 +132,76 @@ and open the template in the editor.
                     </div>
                 </form>
             </div>
-            <div id="services">
-                
-            </div>
+           
+        <div id="services">
 
-<br>
-<div class="container search" style="border: 1px solid #000;">
-    <div class="row">
-        <div class="col-md-12" >
-            
-                <input type="button" class="click" id="click" value="FIND MY LOCATION">
-               <input type="text" class="control-label" value="Type to search by city" />
-               <input type="button" class="click" id="click" value="Search">
-          
         </div>
             
-        </div >
-        <div class="container bottom_search">
-        <div class="row">
-            <div class="col-md-3" >
-                <div class="dropdown form-control">
-                    
-                    <div data-toggle="dropdown" class="filter_menu_trigger">Bedrooms 0+
-                        <span class="caret caret_sidebar "></span>
+        
+        <br>
+        <div class="container search" style="border: 1px solid #000;">
+            <div class="row">
+                <div class="col-md-12" >
+
+                    <input type="button" class="click" id="click" value="FIND MY LOCATION">
+                    <input type="text" class="control-label" value="Type to search by city" />
+                    <input type="button" class="click" id="click" value="Search">
+
+                </div>
+
+            </div >
+            <div class="container bottom_search">
+                <div class="row">
+                    <div class="col-md-3" >
+                        <div class="dropdown form-control">
+
+                            <div data-toggle="dropdown" class="filter_menu_trigger">Bedrooms 0+
+                                <span class="caret caret_sidebar "></span>
+                            </div>
+                            <!--  <input type="hidden" name="bedrooms" value="0">-->
+                            <ul class="dropdown-menu filter_menu v2-dropdown" role="menu" aria-labelledby="sidebar-adv_categ">
+                                <li role="presentation" data-value="0">Bedrooms 0+</li>
+                                <li role="presentation" data-value="1">Bedrooms 1+</li>
+                                <li role="presentation" data-value="2">Bedrooms 2+</li>
+                                <li role="presentation" data-value="3">Bedrooms 3+</li>
+                                <li role="presentation" data-value="4">Bedrooms 4+</li>
+                                <li role="presentation" data-value="5">Bedrooms 5+</li> 
+                            </ul>        
+                        </div>
+
+                    </div> 
+                    <div class="col-md-3" >
+                        <div class="dropdown form-control">
+
+                            <div data-toggle="dropdown" class="filter_menu_trigger">Bathrooms 0+
+                                <span class="caret caret_sidebar "></span>
+                            </div>
+                            <input type="hidden" name="Bathrooms" value="0">
+                            <ul class="dropdown-menu filter_menu v2-dropdown" role="menu" aria-labelledby="sidebar-adv_categ">
+                                <li role="presentation" data-value="0">Bathrooms 0+</li>
+                                <li role="presentation" data-value="1">Bathrooms 1+</li>
+                                <li role="presentation" data-value="2">Bathrooms 2+</li>
+                                <li role="presentation" data-value="3">Bathrooms 3+</li>
+                                <li role="presentation" data-value="4">Bathrooms 4+</li>
+                                <li role="presentation" data-value="5">Bathrooms 5+</li> 
+                            </ul>        
+                        </div>
+
+                    </div> 
+                    <div class="col-md-6" >
+                        <div>Price:<span id="spanOutput"></span>
+                            <br/><br/>
+                            <div id="slider" style="width: 300px;"></div>
+                        </div>
+
                     </div>
-                  <!--  <input type="hidden" name="bedrooms" value="0">-->
-                        <ul class="dropdown-menu filter_menu v2-dropdown" role="menu" aria-labelledby="sidebar-adv_categ">
-                            <li role="presentation" data-value="0">Bedrooms 0+</li>
-                            <li role="presentation" data-value="1">Bedrooms 1+</li>
-                            <li role="presentation" data-value="2">Bedrooms 2+</li>
-                            <li role="presentation" data-value="3">Bedrooms 3+</li>
-                            <li role="presentation" data-value="4">Bedrooms 4+</li>
-                            <li role="presentation" data-value="5">Bedrooms 5+</li> 
-                        </ul>        
-                 </div>
-                
-            </div> 
-            <div class="col-md-3" >
-                <div class="dropdown form-control">
-                    
-                    <div data-toggle="dropdown" class="filter_menu_trigger">Bathrooms 0+
-                        <span class="caret caret_sidebar "></span>
-                    </div>
-                         <input type="hidden" name="Bathrooms" value="0">
-                        <ul class="dropdown-menu filter_menu v2-dropdown" role="menu" aria-labelledby="sidebar-adv_categ">
-                            <li role="presentation" data-value="0">Bathrooms 0+</li>
-                            <li role="presentation" data-value="1">Bathrooms 1+</li>
-                            <li role="presentation" data-value="2">Bathrooms 2+</li>
-                            <li role="presentation" data-value="3">Bathrooms 3+</li>
-                            <li role="presentation" data-value="4">Bathrooms 4+</li>
-                            <li role="presentation" data-value="5">Bathrooms 5+</li> 
-                        </ul>        
-                 </div>
-                
-            </div> 
-            <div class="col-md-6" >
-                <div>Price:<span id="spanOutput"></span>
-                    <br/><br/>
-                    <div id="slider" style="width: 300px;"></div>
-                   </div>
-               
+                </div>
+                <br>
             </div>
         </div>
-        <br>
-</div>
-</div>
-<div class="footer">
+
+        <!-----Footer-->
+        <div class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
@@ -317,12 +320,17 @@ and open the template in the editor.
         </div>
         <div class="footer-copyright text-left py-3" >© 2019 Copyright&nbsp;<span><a>|&nbsp;Terms of Use&nbsp;</a></span>
             <span><a> |&nbsp;Privacy Policy</a></span>
-            
+
             <span class="subfooter">
-                <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
+                <a id="contact_link">  <i  class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                &nbsp;
                 <button><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
             </span>
         </div>
-   
-</body>
+        <div class="enve">
+            hello world
+        </div>
+        <script type="text/javascript" src="./scripts/pages.js"></script>
+    </body>
 </html>
