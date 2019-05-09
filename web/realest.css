@@ -198,7 +198,7 @@
     position:absolute;
     transition:1s all;
     height:350px;
-    width:100%;
+    width:unset;
     border-top:1px solid black;
 }
 #crossfade img.bottom {
@@ -351,3 +351,5 @@ hr {
 .subfooter{
     float:right;
 }
+
+//carasol inside carasol
