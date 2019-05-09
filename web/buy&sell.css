@@ -4,18 +4,21 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : May 3, 2019, 11:27:15 AM
+    Created on : May 7, 2019, 10:43:50 AM
     Author     : USER-4W55N52
 */
 
+hr{
+    border: 1px solid #000;
+}
 
-/*ul.breadcrumb {
-  padding: 10px 16px;
+ul.breadcrumb {
+  padding: 8px 12px;
   list-style: none;
 }
 ul.breadcrumb li {
   display: inline;
-  font-size: 18px;
+  font-size: 14px;
 }
 ul.breadcrumb li+li:before {
   padding: 8px;
@@ -30,4 +33,3 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
-*/
