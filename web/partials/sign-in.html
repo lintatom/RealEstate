@@ -1,0 +1,90 @@
+<!-- SignIn form--->
+<div id="container_mainsignin" class="model">
+    <form class="model_content animate">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('container_mainsignin').style.display = 'none'"
+                class="close">&times;</span>
+        </div>
+
+        <div class="container_signin">
+            <div class="register">
+                <h3>Register For Information</h3>
+                <hr>
+            </div>
+            <div style="margin-bottom:10px; text-align: justify;line-height: 20px;font-size: 14px;color: #768082;">
+                Enter your information to continue searching all properties available on the market. See listing
+                photos and details about the latest listings.
+            </div>
+            <div class="signup_with_fb_container">
+                <div class="signup_fb">
+                    <a> <img src="img/login-fb.png"></a>
+                </div>
+                <div>
+                    <img src="img/login_with_or.png">
+                </div>
+                <div style="font-size: 14px; font-wieght: bold; color: #666; text-align: center;">
+                    Sign Up with Email
+                </div>
+            </div>
+            <div class="sub_signin">
+                <input class="txtname_signin" type="text" placeholder="Name" name="uname" required>
+
+
+                <input type="text" placeholder="Email" name="email" required>
+                <input class="txtphone_signin" type="text" placeholder="Phone Number" name="phone">
+
+                <button class="btnregister_signin" type="submit">Register</button>
+                <div class="login-links">
+                    <a class="alreadyregistered_link" href="#" id="widget_login_topbar" style="color:#768082;">Already
+                        registered?</a>
+                </div>
+                <div>
+                    <a class="needstoregister-links" href="#" id="widget_register_topbar" style="color:#768082;">Need to
+                        register?</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('container_mainsignin');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    /*----hide the element in signIn Page-----*/
+    $(document).ready(function () {
+        $(".signin_link").click(function () {
+            $(".needstoregister-links").hide();
+        });
+
+        /* contact function*/
+        $("#contact_link").click(function () {
+            $(".needstoregister-links").show();
+        });
+
+        $(".alreadyregistered_link").click(function () {
+            $(".txtname_signin").hide();
+            $(".txtphone_signin").hide();
+            $(".alreadyregistered_link").hide();
+            $(".needstoregister-links").show();
+            // $(".btnregister_signin").text('Login');
+            $(".btnregister_signin").text("Login");
+
+        });
+        $(".needstoregister-links").click(function () {
+            $(".txtname_signin").show();
+            $(".txtphone_signin").show();
+            $(".alreadyregistered_link").show();
+            $(".needstoregister-links").hide();
+            $(".btnregister_signin").text("Register");
+        });
+
+    });
+</script>
