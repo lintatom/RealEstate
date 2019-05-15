@@ -1,18 +1,22 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : May 6, 2019, 5:57:34 AM
-    Author     : kakar
-*/
 
-.enve{
+#contact-form{
+    color: #000;
+    padding: 10px;
+    box-sizing: border-box;
     border: 1px solid #000;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 150px;
-    height: 200px;
+    background: white;
+}
+#contact-form > h4{
+    border-bottom: 1px solid #000;
+}
+
+#contact-form .btn {
+    width: 100%;
+}
+#contact-popup{
+    position: fixed;
+    z-index: 300;
+    right:50px;
+    bottom: 50px;
+    display: none;
 }
