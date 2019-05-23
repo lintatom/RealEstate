@@ -46,3 +46,48 @@
         </div>
     </form>
 </div>
+<<<<<<< HEAD
+=======
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('container_mainsignin');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    /*----hide the element in signIn Page-----*/
+    $(document).ready(function () {
+        $(".signin_link").click(function () {
+            $(".needstoregister-links").hide();
+        });
+
+        /* contact function*/
+        // $("#contact_link").click(function () {
+        //     $(".needstoregister-links").show();
+        // });
+
+        $(".alreadyregistered_link").click(function () {
+            $(".txtname_signin").hide();
+            $(".txtphone_signin").hide();
+            $(".alreadyregistered_link").hide();
+            $(".needstoregister-links").show();
+            // $(".btnregister_signin").text('Login');
+            $(".btnregister_signin").text("Login");
+
+        });
+        $(".needstoregister-links").click(function () {
+            $(".txtname_signin").show();
+            $(".txtphone_signin").show();
+            $(".alreadyregistered_link").show();
+            $(".needstoregister-links").hide();
+            $(".btnregister_signin").text("Register");
+        });
+
+    });
+</script>
+>>>>>>> d1459f6cc856cc7cfcc127d7854112c76360e595
